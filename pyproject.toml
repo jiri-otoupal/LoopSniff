@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "loopsniff"
-version = "0.1.0"
+version = "0.1.1"
 description = "A static analysis tool for detecting inefficient SQLAlchemy loops"
 license = "MIT"
 authors = ["Jiri Otoupal <jiri-otoupal@ips-database.eu>"]
