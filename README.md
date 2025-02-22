@@ -42,7 +42,7 @@ pip install -r requirements.txt
 To scan your code for inefficient SQLAlchemy patterns, run:
 
 ```bash
-python main.py /path/to/your/project
+loopsniff /path/to/your/project
 ```
 
 This command recursively scans all `.py` files in the specified directory and prints out a concise, color-coded summary of any detected patterns, along with code snippets and recommendations for improvement.
