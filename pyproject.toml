@@ -1,19 +1,18 @@
-[project]
+[tool.poetry]
 name = "loopsniff"
 version = "0.1.0"
 description = ""
 license = "MIT"
+authors = ["Jiri Otoupal <jiri-otoupal@ips-database.eu>"]
 readme = "README.md"
-packages = [{include = "app", from = "."}]
-authors = [
-    { name = "Jiri Otoupal", email = "jiri-otoupal@ips-database.eu" }
-]
-readme = "README.md"
-requires-python = ">3.10"
-dependencies = [
-    "click (>=8.1.8,<9.0.0)",
-    "rich (>=13.9.4,<14.0.0)"
-]
+
+# Ensure Poetry recognizes the package correctly
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+click = ">=8.1.8,<9.0.0"
+rich = ">=13.9.4,<14.0.0"
 
 [tool.poetry.scripts]
 loopsniff = "app.main:main"
