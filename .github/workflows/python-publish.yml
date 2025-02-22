@@ -32,8 +32,8 @@ jobs:
       - name: Install Poetry
         run: pip install poetry
 
-      - name: Configure Poetry
-        run: poetry config pypi-token.pypi ${{ secrets.PYPI_API_TOKEN }}
+      - name: Update Poetry lock file
+        run: poetry lock --no-interaction
 
       - name: Install dependencies
         run: poetry install --no-interaction --no-root
@@ -48,4 +48,4 @@ jobs:
         run: ls -lh dist/
 
       - name: Publish package to PyPI
-        run: poetry publish --build
+        run: poetry publish --build --no-interaction
