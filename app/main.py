@@ -339,7 +339,7 @@ def print_results(results):
                 "Consider bulk operations for better performance."
             )
             console.print(
-                f"[bold blue]{filepath}[/bold blue] | For-loop at line [bold green]{for_loop_lineno}[/bold green] "
+                f"[bold blue]{filepath}:{call_lineno}[/bold blue] | For-loop at line [bold green]{for_loop_lineno}[/bold green] "
                 f"(.add()/.append() at line [bold green]{call_lineno}[/bold green]): "
                 f"[italic]{explanation}[/italic] | Code: [yellow]{snippet}[/yellow]"
             )
@@ -376,7 +376,7 @@ def print_results(results):
                 explanation = "Inefficient call detected in loop. Review and optimize your query usage."
 
             console.print(
-                f"[bold blue]{filepath}[/bold blue] | At line [bold green]{call_lineno}[/bold green] "
+                f"[bold blue]{filepath}:{call_lineno}[/bold blue] | At line [bold green]{call_lineno}[/bold green] "
                 f"({call_name}{loop_var_info}): [italic]{explanation}[/italic] | Code: [yellow]{snippet}[/yellow]"
             )
 
