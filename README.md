@@ -3,7 +3,6 @@
 [![image](https://img.shields.io/pypi/v/loopsniff.svg)](https://pypi.org/project/loopsniff/)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/loopsniff)](https://pypi.org/project/loopsniff/)
 
-[![Build Status](https://travis-ci.com/jiri-otoupal/loopsniff.svg?branch=master)](https://travis-ci.com/github/jiri-otoupal/loopsniff)
 [![Downloads](https://pepy.tech/badge/loopsniff)](https://pepy.tech/project/loopsniff)
 
 LoopSniff is a static analysis tool that scans your Python code for inefficient iterative processing patterns—especially those involving SQLAlchemy query results. If you’ve ever manually looped over query results to add rows one-by-one or used list comprehensions on query results, LoopSniff will help you identify and optimize these patterns for better performance.
